@@ -57,10 +57,12 @@
     "@storybook/addon-actions": "^6.3.1",
     "@storybook/addon-essentials": "^6.3.1",
     "@storybook/addon-links": "^6.3.1",
+    "@storybook/addon-storyshots": "^6.3.2",
     "@storybook/node-logger": "^6.3.1",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.3.1",
+    "husky": "^7.0.0",
     "prettier": "^2.3.2",
-    "husky": "^7.0.0"
+    "react-test-renderer": "^17.0.2"
   }
 }
