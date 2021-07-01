@@ -15,8 +15,7 @@ const Template: ComponentStory<typeof QuestionOptions> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  options: defaultOptions,
-  onClick: ()=>{}
+  options: defaultOptions
 };
 
 export const Selected = Template.bind({})
