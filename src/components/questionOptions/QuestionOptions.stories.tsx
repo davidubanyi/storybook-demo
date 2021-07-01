@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { QuestionOptions } from "./QuestionOptions";
-import { defaultOptions } from "../QuestionWrapper";
+import { defaultOptions } from "../questionWrapper/QuestionWrapper";
 
 export default {
   title: "QuestionOptions",

@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
-import Question from "./question/Question";
-import { QuestionOption, QuestionOptions } from "./questionOptions/QuestionOptions";
+import { Loading } from "../Loading";
+import Question from "../question/Question";
+import { QuestionOption, QuestionOptions } from "../questionOptions/QuestionOptions";
 import './questionwrapper.modules.css'
 
 export const defaultOptions = [
@@ -30,7 +32,12 @@ export const defaultOptions = [
   },
 ];
 
-export const QuestionWrapper: React.FC = () => {
+type QuestionWrapperProps = {
+  error?: string,
+  loading?: boolean
+}
+
+export const QuestionWrapper: React.FC<QuestionWrapperProps> = ({error, loading}) => {
   const [selected, setSelected] = useState<string | undefined>(undefined);
   const [options, setOptions] = useState<QuestionOption[]>(defaultOptions);
 
@@ -38,12 +45,19 @@ export const QuestionWrapper: React.FC = () => {
     options.map((option) => {
       if (id === option.id) {
         setSelected(option.value);
-        option.selected = true;
+       return option.selected = true;
       } else {
-        option.selected = false;
+       return option.selected = false;
       }
     });
   };
+  if(loading){
+    return <div className="question-wrapper"><Loading /></div>
+  }
+
+  if(error){
+    return <div className="question-wrapper">{error}</div>
+  }
 
   return (
     <div className="question-wrapper">

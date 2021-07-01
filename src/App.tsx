@@ -1,5 +1,5 @@
 import React from 'react'
-import { QuestionWrapper } from './components/QuestionWrapper'
+import { QuestionWrapper } from './components/questionWrapper/QuestionWrapper'
 
 function App() {
 
