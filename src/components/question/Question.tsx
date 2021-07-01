@@ -1,17 +1,18 @@
-import React from "react";
-import Dash from "../questionDash/QuestionDash";
-import './question.modules.css'
+import React from "react"
+import Dash from "../questionDash/QuestionDash"
+import "./question.modules.css"
 
 type QuestionProps = {
-    selectedOption?: string
-};
+  selectedOption?: string
+}
 
-const Question: React.FC<QuestionProps> = ({ selectedOption }) => {
+const Question: React.FC<QuestionProps> = ({selectedOption}) => {
   return (
     <div className="question--container">
-      What {selectedOption ? <Dash option={selectedOption} /> :<Dash />} you doing?
+      What {selectedOption ? <Dash option={selectedOption} /> : <Dash />} you
+      doing?
     </div>
-  );
-};
+  )
+}
 
-export default Question;
+export default Question

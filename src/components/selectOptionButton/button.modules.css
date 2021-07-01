@@ -1,23 +1,23 @@
 .btn {
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-    text-align: left;
-    border: none;
-    min-width: 80px;
-    cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: left;
+  border: none;
+  min-width: 80px;
+  cursor: pointer;
 }
 
 .btn--selected {
-    background-color: #276678;
-    color: white;
+  background-color: #276678;
+  color: white;
 }
 
-.btn--selected-correct{
-    background-color: #46a997;
-    color: white;
+.btn--selected-correct {
+  background-color: #46a997;
+  color: white;
 }
 
 .btn--selected-wrong {
-    background-color: #cb7b7a;
+  background-color: #cb7b7a;
 }

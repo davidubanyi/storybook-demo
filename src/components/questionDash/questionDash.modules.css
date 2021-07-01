@@ -1,6 +1,6 @@
 .question--dash {
-    min-width: 30px;
-    display: inline-block;
-    border-bottom: 2px solid ;
-    text-align: center;
+  min-width: 30px;
+  display: inline-block;
+  border-bottom: 2px solid;
+  text-align: center;
 }
