@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap');
+div,span{
+    font-family: 'open sans', sans-serif;
+}
 .question-wrapper {
     padding: 40px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.11);
@@ -14,12 +18,14 @@
     font-weight: 600;
     color: #276678;
     margin-bottom: 10px;
+    font-family: 'open sans', sans-serif;
 }
 
 .question-wrapper--instruction {
     font-size: 13px;
     margin-top: 10px;
     color: #276678;
+    font-family: 'open sans', sans-serif;
 }
 
 .loading-item {
@@ -53,6 +59,19 @@
     min-height: 288px;
   }
   
+.error{
+      text-align: center;
+      min-height: 250px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .error-message {
+      margin-top: 10px;
+      color: red;
+      font-family: 'Poppins', sans-serif;
+  }
   @keyframes glow {
     0%,
     100% {

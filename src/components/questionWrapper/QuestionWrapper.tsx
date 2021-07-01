@@ -1,36 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
-import { Loading } from "../Loading";
+import { Loading } from "./Loading";
 import Question from "../question/Question";
 import { QuestionOption, QuestionOptions } from "../questionOptions/QuestionOptions";
+import {defaultOptions} from '../../utils'
 import './questionwrapper.modules.css'
-
-export const defaultOptions = [
-  {
-    id: "3904nfo",
-    selected: false,
-    label: "A. are",
-    value: "are"
-  },
-  {
-    id: "2345ffo",
-    selected: false,
-    label: "B. is",
-    value: "is"
-  },
-  {
-    id: "2983fhh",
-    selected: false,
-    label: "C. did",
-    value: "did"
-  },
-  {
-    id: "7388hff",
-    selected: false,
-    label: "D. do",
-    value: "do"
-  },
-];
 
 type QuestionWrapperProps = {
   error?: string,
@@ -56,7 +30,10 @@ export const QuestionWrapper: React.FC<QuestionWrapperProps> = ({error, loading}
   }
 
   if(error){
-    return <div className="question-wrapper">{error}</div>
+    return <div className="question-wrapper error">
+      <div className="error-icon">❌</div>
+      <div className="error-message">{error}</div>
+  </div>
   }
 
   return (
