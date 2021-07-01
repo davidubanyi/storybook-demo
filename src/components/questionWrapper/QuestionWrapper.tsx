@@ -2,11 +2,9 @@
 import React, {useState} from "react"
 import {Loading} from "./Loading"
 import Question from "../question/Question"
-import {
-  QuestionOption,
-  QuestionOptions
-} from "../questionOptions/QuestionOptions"
-import {defaultOptions} from "../../utils"
+import {QuestionOptions} from "../questionOptions/QuestionOptions"
+import {QuestionOption} from "../../utils/interfaces"
+import {defaultOptions} from "../../utils/options"
 import "./questionwrapper.modules.css"
 
 type QuestionWrapperProps = {
@@ -14,6 +12,12 @@ type QuestionWrapperProps = {
   loading?: boolean
 }
 
+/**
+ * The question wrapper component: handles the logic for the answering of the question and for updating the state of the children when the answer is selected by the user
+ * @param error
+ * @param loading
+ * @returns JSX
+ */
 export const QuestionWrapper: React.FC<QuestionWrapperProps> = ({
   error,
   loading
@@ -21,6 +25,10 @@ export const QuestionWrapper: React.FC<QuestionWrapperProps> = ({
   const [selected, setSelected] = useState<string | undefined>(undefined)
   const [options, setOptions] = useState<QuestionOption[]>(defaultOptions)
 
+  /**
+   * Handle the user selecting an option for the question
+   * @param id
+   */
   const handleSelect = (id: string) => {
     options.map((option) => {
       if (id === option.id) {

@@ -1,13 +1,9 @@
 import React from "react"
-import {QuestionOption} from "../questionOptions/QuestionOptions"
+import {QuestionOption} from "../../utils/interfaces"
 import "./button.modules.css"
 
 interface ButtonProps extends QuestionOption {
   backgroundColor?: string
-
-  /**
-   * Click handler when the button is selected
-   */
   onButtonClick: (id: string) => void
 }
 

@@ -1,8 +1,10 @@
 import React from "react"
 import {ComponentStory, ComponentMeta} from "@storybook/react"
-
 import {SelectOptionButton} from "./SelectOptionButton"
 
+/**
+ * Story for the options component for a question
+ */
 export default {
   title: "SelectOptionButton",
   component: SelectOptionButton,
@@ -29,7 +31,7 @@ Default.args = {
 }
 
 /**
- * Button state when not selected
+ * Button state when an option has been selected
  */
 export const Selected = Template.bind({})
 Selected.args = {
@@ -38,7 +40,7 @@ Selected.args = {
 }
 
 /**
- * Button state when the selected option was the correct option
+ * Button state when the selected and the answer is correct, simulating the UI in a results display
  */
 export const Correct = Template.bind({})
 Correct.args = {
@@ -48,7 +50,7 @@ Correct.args = {
 }
 
 /**
- * Button state when the selected option was the wrong option
+ * Button state when the selected option was the wrong option, simulating the UI in a results display
  */
 export const Wrong = Template.bind({})
 Wrong.args = {

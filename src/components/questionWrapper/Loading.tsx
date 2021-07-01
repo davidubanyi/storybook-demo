@@ -1,6 +1,6 @@
 import React from "react"
 
-const LoadingRow = (
+const OptionsRow = (
   <div className="loading-item">
     <span className="glow-checkbox" />
     <span className="glow-text">
@@ -16,14 +16,18 @@ const QuestionRow = (
     </span>
   </div>
 )
+/**
+ * Simple loading component designed with the structure of the question and options
+ * @returns JSX
+ */
 export const Loading = () => {
   return (
     <div className="list-items">
       {QuestionRow}
-      {LoadingRow}
-      {LoadingRow}
-      {LoadingRow}
-      {LoadingRow}
+      {OptionsRow}
+      {OptionsRow}
+      {OptionsRow}
+      {OptionsRow}
     </div>
   )
 }

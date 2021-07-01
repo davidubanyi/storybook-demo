@@ -6,6 +6,11 @@ type QuestionProps = {
   selectedOption?: string
 }
 
+/**
+ * Displays the question to the user
+ * @param selectedOption value property that the user selects
+ * @returns JSX
+ */
 const Question: React.FC<QuestionProps> = ({selectedOption}) => {
   return (
     <div className="question--container">
