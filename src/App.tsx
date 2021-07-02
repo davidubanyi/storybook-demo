@@ -1,10 +1,10 @@
 import React from "react"
-import {QuestionWrapper} from "./components/questionWrapper/QuestionWrapper"
+import Question from "./components/question/Question"
 
 function App() {
   return (
     <div style={{display: "flex", justifyContent: "center"}}>
-      <QuestionWrapper></QuestionWrapper>
+      <Question />
     </div>
   )
 }

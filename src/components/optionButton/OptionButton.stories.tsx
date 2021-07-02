@@ -1,6 +1,6 @@
 import React from "react"
 import {ComponentStory, ComponentMeta} from "@storybook/react"
-import {SelectOptionButton} from "./SelectOptionButton"
+import {SelectOptionButton} from "./OptionButton"
 
 /**
  * Story for the options component for a question

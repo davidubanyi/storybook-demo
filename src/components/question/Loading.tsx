@@ -20,7 +20,7 @@ const QuestionRow = (
  * Simple loading component designed with the structure of the question and options
  * @returns JSX
  */
-export const Loading = () => {
+export function Loading (){
   return (
     <div className="list-items">
       {QuestionRow}

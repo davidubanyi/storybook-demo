@@ -10,7 +10,7 @@ type DashProps = {
  * @returns JSX
  */
 const Dash: React.FC<DashProps> = ({option}) => {
-  return <span className="question--dash">{option ? option : ""}</span>
+  return <span data-testid="dash-component" className="question--dash">{option ? option : ""}</span>
 }
 
 export default Dash

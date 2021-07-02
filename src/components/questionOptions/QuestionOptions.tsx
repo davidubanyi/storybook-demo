@@ -1,6 +1,6 @@
 import React from "react"
 import {QuestionOption} from "../../utils/interfaces"
-import {SelectOptionButton} from "../selectOptionButton/SelectOptionButton"
+import {SelectOptionButton} from "../optionButton/OptionButton"
 import "./questionOptions.modules.css"
 
 type QuestionOptionsProps = {
