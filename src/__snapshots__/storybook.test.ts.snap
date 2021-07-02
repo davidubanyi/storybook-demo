@@ -1,306 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Question Answered 1`] = `
-<div
-  className="question--container"
->
-  What 
-  <span
-    className="question--dash"
-  >
-    are
-  </span>
-   you doing?
-</div>
-`;
-
 exports[`Storyshots Question Default 1`] = `
-<div
-  className="question--container"
->
-  What 
-  <span
-    className="question--dash"
-  >
-    
-  </span>
-   you doing?
-</div>
-`;
-
-exports[`Storyshots QuestionDash Answered 1`] = `
-<span
-  className="question--dash"
->
-  are
-</span>
-`;
-
-exports[`Storyshots QuestionDash Default 1`] = `
-<span
-  className="question--dash"
->
-  
-</span>
-`;
-
-exports[`Storyshots QuestionOptions Answered Correctly 1`] = `
-<div
-  style={
-    Object {
-      "display": "inline-flex",
-      "flexDirection": "column",
-    }
-  }
->
-  <button
-    className="btn btn--selected btn--selected-correct"
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="are"
-  >
-    A. are
-  </button>
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="is"
-  >
-    B. is
-  </button>
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="did"
-  >
-    C. did
-  </button>
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="do"
-  >
-    D. do
-  </button>
-</div>
-`;
-
-exports[`Storyshots QuestionOptions Answered Wrongly 1`] = `
-<div
-  style={
-    Object {
-      "display": "inline-flex",
-      "flexDirection": "column",
-    }
-  }
->
-  <button
-    className="btn  btn--selected-correct"
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="are"
-  >
-    A. are
-  </button>
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="is"
-  >
-    B. is
-  </button>
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="did"
-  >
-    C. did
-  </button>
-  <button
-    className="btn btn--selected btn--selected-wrong"
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="do"
-  >
-    A. do
-  </button>
-</div>
-`;
-
-exports[`Storyshots QuestionOptions Default 1`] = `
-<div
-  style={
-    Object {
-      "display": "inline-flex",
-      "flexDirection": "column",
-    }
-  }
->
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="are"
-  >
-    A. are
-  </button>
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="is"
-  >
-    B. is
-  </button>
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="did"
-  >
-    C. did
-  </button>
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="do"
-  >
-    D. do
-  </button>
-</div>
-`;
-
-exports[`Storyshots QuestionOptions Selected 1`] = `
-<div
-  style={
-    Object {
-      "display": "inline-flex",
-      "flexDirection": "column",
-    }
-  }
->
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="are"
-  >
-    A. are
-  </button>
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="is"
-  >
-    B. is
-  </button>
-  <button
-    className="btn  "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="did"
-  >
-    C. did
-  </button>
-  <button
-    className="btn btn--selected "
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": undefined,
-      }
-    }
-    type="button"
-    value="do"
-  >
-    D. do
-  </button>
-</div>
-`;
-
-exports[`Storyshots QuestionWrapper Default 1`] = `
 <div
   className="question-wrapper"
 >
@@ -315,6 +15,7 @@ exports[`Storyshots QuestionWrapper Default 1`] = `
     What 
     <span
       className="question--dash"
+      data-testid="dash-component"
     >
       
     </span>
@@ -326,12 +27,7 @@ exports[`Storyshots QuestionWrapper Default 1`] = `
     Select the appropriate option to fill the gap
   </div>
   <div
-    style={
-      Object {
-        "display": "inline-flex",
-        "flexDirection": "column",
-      }
-    }
+    className="question-options--container"
   >
     <button
       className="btn  "
@@ -389,7 +85,7 @@ exports[`Storyshots QuestionWrapper Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots QuestionWrapper Error 1`] = `
+exports[`Storyshots Question Error 1`] = `
 <div
   className="question-wrapper error"
 >
@@ -406,7 +102,7 @@ exports[`Storyshots QuestionWrapper Error 1`] = `
 </div>
 `;
 
-exports[`Storyshots QuestionWrapper Loading 1`] = `
+exports[`Storyshots Question Loading 1`] = `
 <div
   className="question-wrapper"
 >
@@ -481,6 +177,290 @@ exports[`Storyshots QuestionWrapper Loading 1`] = `
       </span>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots QuestionDash Default 1`] = `
+<span
+  className="question--dash"
+  data-testid="dash-component"
+>
+  
+</span>
+`;
+
+exports[`Storyshots QuestionDash Selected 1`] = `
+<span
+  className="question--dash"
+  data-testid="dash-component"
+>
+  are
+</span>
+`;
+
+exports[`Storyshots QuestionOptions Answered Correctly 1`] = `
+<div
+  className="question-options--container"
+>
+  <button
+    className="btn btn--selected btn--selected-correct"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="are"
+  >
+    A. are
+  </button>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="is"
+  >
+    B. is
+  </button>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="did"
+  >
+    C. did
+  </button>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="do"
+  >
+    D. do
+  </button>
+</div>
+`;
+
+exports[`Storyshots QuestionOptions Answered Wrongly 1`] = `
+<div
+  className="question-options--container"
+>
+  <button
+    className="btn  btn--selected-correct"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="are"
+  >
+    A. are
+  </button>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="is"
+  >
+    B. is
+  </button>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="did"
+  >
+    C. did
+  </button>
+  <button
+    className="btn btn--selected btn--selected-wrong"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="do"
+  >
+    A. do
+  </button>
+</div>
+`;
+
+exports[`Storyshots QuestionOptions Default 1`] = `
+<div
+  className="question-options--container"
+>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="are"
+  >
+    A. are
+  </button>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="is"
+  >
+    B. is
+  </button>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="did"
+  >
+    C. did
+  </button>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="do"
+  >
+    D. do
+  </button>
+</div>
+`;
+
+exports[`Storyshots QuestionOptions Selected 1`] = `
+<div
+  className="question-options--container"
+>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="are"
+  >
+    A. are
+  </button>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="is"
+  >
+    B. is
+  </button>
+  <button
+    className="btn  "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="did"
+  >
+    C. did
+  </button>
+  <button
+    className="btn btn--selected "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+    type="button"
+    value="do"
+  >
+    D. do
+  </button>
+</div>
+`;
+
+exports[`Storyshots QuestionText Default 1`] = `
+<div
+  className="question--container"
+>
+  What 
+  <span
+    className="question--dash"
+    data-testid="dash-component"
+  >
+    
+  </span>
+   you doing?
+</div>
+`;
+
+exports[`Storyshots QuestionText Selected 1`] = `
+<div
+  className="question--container"
+>
+  What 
+  <span
+    className="question--dash"
+    data-testid="dash-component"
+  >
+    are
+  </span>
+   you doing?
 </div>
 `;
 
