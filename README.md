@@ -28,7 +28,7 @@ The component structure is illustrated below
 |       +- ComponentName.stories.tsx : handles the 
 |       +- ComponentName.test.tsx : handles the 
 |       +- componentName.modules.css : handles the
-|       +- PresentationalComponent.tsx React component only tied to |  | |  |   main component    
+|       +- PresentationalComponent.tsx React component only tied to main component    
 |
 
 ```
