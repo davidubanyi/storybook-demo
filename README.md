@@ -1,7 +1,7 @@
 # TestGorilla Design System Demo
 
 ## Introduction
-The TestGorilla Design System Demo Project hopes to showcase the practicality, advantages, developer experience of adopting a component driven approach to UI with [ReactJS](https://reactjs.org) and [StorybookJS](https://storybook.js.org/).
+A Design System Demo Project hopes to showcase the practicality, advantages, developer experience of adopting a component driven approach to UI with [ReactJS](https://reactjs.org) and [StorybookJS](https://storybook.js.org/).
 
 This readme is designed to help you understand the structure and approach needed to work on this project.
 
